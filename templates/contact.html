@@ -1,0 +1,71 @@
+{% extends 'basic.html' %}
+
+{% block title%}
+BuyNest/Contat
+{% endblock %}
+
+{%block body%}
+
+{% comment %} <div class="container">
+  <h3>Contact Us</h3>
+  <form action="/ecom/contact/" method="post">{% csrf_token %}
+<div class="form-group">
+ <label for="name">Name</label>
+ <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name">
+</div>
+       <div class="form-group">
+ <label for="name">Email</label>
+ <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email">
+</div>
+       <div class="form-group">
+ <label for="name">Phome</label>
+ <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter Your Phone Number">
+</div>
+       <div class="form-group">
+<div class="form-group">
+ <label for="desc">How May We Help You ?</label>
+ <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
+ <button type="submit" class="btn btn-success">Submit</button>
+</div> {% endcomment %}
+
+<section class="my-2">
+    <div class="py-2">
+      <div>
+        <h2 class="text-center">Contact Us </h2>
+        
+      </div>
+      <div class="w-50 m-auto">
+        <form action="/ecom/contact/" method="post">
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="name"> Name</label>
+            <input type="text" id='name' name="name" autocomplete="off" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id='email' name="email" autocomplete="off" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="phone" id="phone" name="phone" autocomplete="off" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="add">Address</label>
+            <input type="text" id='address' name="address" autocomplete="off" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="pin">PIN Code</label>
+            <input type="text" id='pin'name="pin" autocomplete="off" class="form-control">
+          </div>
+            <div class="form-group">
+            <label for="comm">Commants</label>
+            <input type="text"id='commant   ' name="commant" autocomplete="off" class="form-control"> 
+            <input class="form-check-input" type="checkbox" name="remember"> Remember me
+
+          </div>
+
+          <button type="submit" href="mrharsh.html" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <br>
+{% endblock %}
